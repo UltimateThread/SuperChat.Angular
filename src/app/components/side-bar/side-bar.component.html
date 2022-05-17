@@ -1,0 +1,11 @@
+<div class="side-bar-content">
+    <div class="side-bar-rooms-header">Chat Rooms</div>
+    <div *ngFor="let room of rooms" class="side-bar-room">
+        <div *ngIf="room.isSelected === true" class="side-bar-room-background-selected">
+            <div class="side-bar-room-text">{{room.name}}</div>
+        </div>
+        <div *ngIf="room.isSelected === false" class="side-bar-room-background-unselected">
+            <div class="side-bar-room-text">{{room.name}}</div>
+        </div>
+    </div>
+</div>

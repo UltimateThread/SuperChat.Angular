@@ -1,0 +1,13 @@
+<div class="chat-window-wrapper">
+    <div class="chat-window-messages-container" #scrollMe>
+        <div *ngFor="let message of chatMessages">
+            <chat-message [chatMessage]="message"></chat-message>
+        </div>
+    </div>
+    <div class="chat-window-send-container">
+        <div class="chat-window-send-message-box">
+            <textarea class="chat-window-send-input" placeholder="Type Message Here..."></textarea>
+        </div>
+        <mat-icon class="chat-window-send-icon">send</mat-icon>
+    </div>
+</div>
